@@ -26,7 +26,8 @@ function Product(){
     const [quantity,setQuantity] = React.useState(0);
 
     function addToCart(){
-        setQuantity(quantity+1);
+        setQuantity(quantity+1); //for UI React use setQuantity.
+        // quantity++ ;          //that also work but can't show in UI.
     }
 
     return (
@@ -62,4 +63,10 @@ function Product(){
 }
 
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Product/>);
+ReactDOM.createRoot(document.getElementById("root")).render(<Product />);
+// ReactDOM.createRoot(document.getElementById("root")).render(
+// <>
+//     <Product />
+//     <Product />
+// </>
+// );
