@@ -31,9 +31,10 @@ function Product(){
     }
 
     return (
+        <div>
         <div className="shadow-md rounded-lg bg-slate-800 border-slate-700">
         <a href="#">
-            <img
+            <img 
                 className="rounded-t-lg"
                 src="https://dummyimage.com/680X400/087ea4/ffffff.png&text=Product"
                 alt="product image"
@@ -59,14 +60,17 @@ function Product(){
             </div>
         </div>
     </div>
+        </div>
     );
 }
 
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Product />);
-// ReactDOM.createRoot(document.getElementById("root")).render(
-// <>
-//     <Product />
-//     <Product />
-// </>
-// );
+// ReactDOM.createRoot(document.getElementById("root")).render(<Product />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+<div>
+    <div className='flex gap-4'>
+    <Product />
+    <Product />
+    </div>
+</div>
+);
